@@ -1,0 +1,10 @@
+SET NOCOUNT ON;
+
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+
+SELECT distinct(city) from station WHERE Id % 2 = 0 order by city DESC
+
+go
