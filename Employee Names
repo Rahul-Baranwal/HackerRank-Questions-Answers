@@ -1,0 +1,7 @@
+Method 1
+
+select name from Employee order by name
+
+Method 2
+
+select name from Employee order by name
