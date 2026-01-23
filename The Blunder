@@ -1,0 +1,15 @@
+/*
+Enter your query here.
+*/
+-- with salary1 as (
+--     SELECT avg(replace(salary,'0','')) as salar from employees 
+-- )
+-- SELECT avg(salary)- salary1.salar from employees cross join salary1
+
+
+-- SELECT AVG(salary) - avg(replace(salary,'0','')) FROM employees ;
+
+SELECT ceil(AVG(salary)- avg(replace(salary,'0',''))) FROM employees;
+
+
+-- SELECT avg(replace(salary,'0','')) FROM employees;
