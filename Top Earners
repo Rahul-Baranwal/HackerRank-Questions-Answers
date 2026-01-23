@@ -1,0 +1,5 @@
+select salary*months as earnings, 
+       count(*) as data from employee 
+       GROUP by salary*months 
+       DESC limit 1;
+       
